@@ -1,4 +1,3 @@
-# Maintainer: Funami
 pkgname=fend-bin
 pkgver=1.3.2
 pkgrel=1
