@@ -1,5 +1,5 @@
 pkgname=fend-bin
-pkgver=1.3.2
+pkgver=1.3.3
 pkgrel=1
 pkgdesc="Arbitrary-precision unit-aware calculator"
 arch=('x86_64')
@@ -11,8 +11,8 @@ source=("https://raw.githubusercontent.com/printfn/fend/v$pkgver/LICENSE.md"
         "https://github.com/printfn/fend/releases/download/v$pkgver/fend.1")
 source_x86_64=("$pkgname-$pkgver-x86_64.tar.gz::https://github.com/printfn/fend/releases/download/v$pkgver/fend-$pkgver-linux-x64.zip")
 sha256sums=('a59abf360ab4ce1ce88d0c73f872313da3e6c5894799357a8423d6b68d966c43'
-            '00383f830389634c9634cc4731692950422c71071ca55e691ae28c9bbe7b056a')
-sha256sums_x86_64=('9dddd9ed2704e8eede5d58d28c41e32a279c7e2aca829869ec1647785a0fff40')
+            '758527c10e18c573f1f6e76b9ea15aae10de9defb3ecb01e2a2495f47cd927d9')
+sha256sums_x86_64=('99f7b71b80b23560395492d5e80b2b01b86eaa27d9a6ecdb401d069addf03838')
 
 package() {
   install -Dm755 fend -t "$pkgdir/usr/bin"
